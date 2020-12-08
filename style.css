@@ -408,7 +408,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
   color: #fff;
-  background: rgba(0, 0, 0, 0.3);
+  background: #f3976c;
 }
 button {
   outline: none !important;
@@ -455,14 +455,14 @@ button {
   box-shadow: none;
 }
 .scrollToTop {
-  width: 40px;
-  height: 40px;
   position: absolute;
-  bottom: -210px;
+  bottom: -340px;
   right: 10px;
   opacity: 1;
   z-index: 500;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 .scrollToTop span {
   margin-top: 6px;
@@ -585,7 +585,7 @@ a {
   max-width: 1000px;
 }
 .hero-bloc-text {
-  font-size: 38px;
+  font-size: 45px;
 }
 .hero-bloc-text-sub {
   font-size: 36px;
@@ -600,7 +600,7 @@ a {
   margin: auto auto auto auto;
 }
 p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .tight-width-whitespace {
   max-width: 600px;
