@@ -18,6 +18,10 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+a:focus,
+button:focus {
+  border: black 2px dashed;
+}
 #page-loading-blocs-notifaction {
   position: fixed;
   top: 0;
@@ -27,7 +31,7 @@ a:hover {
   background: #fff url(img/pageload-spinner.gif) no-repeat center center;
 }
 .bloc {
-  /*width: 100%;*/
+  width: 100%;
   clear: both;
   background: 50% 50% no-repeat;
   padding: 0 50px;
@@ -42,7 +46,7 @@ a:hover {
   padding-right: 0;
 }
 .bloc-lg {
-  padding: 100px 50px;
+  padding: 50px 50px;
 }
 .bloc-md {
   padding: 50px;
@@ -455,14 +459,11 @@ button {
   box-shadow: none;
 }
 .scrollToTop {
-  position: absolute;
-  bottom: -340px;
-  right: 10px;
   opacity: 1;
   z-index: 500;
   transition: all 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
+  width: 40px;
+  float: right;
 }
 .scrollToTop span {
   margin-top: 6px;
@@ -716,7 +717,7 @@ h4 {
   background-image: url(img/la-chouette-agence-banniere.jpg);
 }
 .bg-presentation {
-  background-image: url(img/image-de-presentation.bmp);
+  background-image: url(img/image-de-presentation.jpg);
 }
 @media (max-width: 1024px) {
   .bloc {
@@ -762,10 +763,6 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-  }
   .bloc-group,
   .bloc-group .bloc {
     display: block;
@@ -774,8 +771,6 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
   }
 }
 @media (max-width: 767px) {
@@ -914,6 +909,20 @@ h4 {
   .blocsapp-device-iphone5 img {
     width: 180px;
     height: 320px;
+  }
+  .hero-bloc-text {
+    font-size: 35px;
+  }
+  .contact {
+    text-align: center;
+  }
+  .social {
+    display: flex;
+    justify-content: space-around;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 400px) {
